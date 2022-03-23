@@ -22,7 +22,7 @@ const UserCard=({user})=>{
                 <div>
                     <Card style={{ width: '18rem' }}>
                     <Card.Body>
-                    <Card.Title>User Infos</Card.Title>
+                    
                     <Card.Subtitle className="mb-2 text-muted">{user.name}</Card.Subtitle>
                     <Card.Text className="mb-2 text-muted">{user.username}</Card.Text>
                     <Card.Text className="mb-2 text-muted">{user.email}</Card.Text>

@@ -16,9 +16,9 @@ const UserList=()=>{
     },[])
 
     return (
-        <div>
+        <div className='user'>
            {
-                // load? <h2>en cours</h2> : users.map((user)=> <h2><Link to={`/users/${user.id}`}><UserCard user={user} setUser={setUser}/></Link></h2>)   
+                  
                 load? <h2>en cours</h2> : users.map((user)=><UserCard  user={user}/>)   
          } 
             
