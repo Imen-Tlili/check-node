@@ -5,7 +5,7 @@ import { Link} from "react-router-dom"
 
 const UserList=()=>{
     const [users, setUsers]=useState([])
-    const [user,setUser] = useState({})
+    const[user,setUser]=useState([])
     const [load, setLoad]=useState(true)
 
     useEffect(()=>{
@@ -18,7 +18,11 @@ const UserList=()=>{
     return (
         <div>
            {
-                load? <h2>en cours</h2> : users.map(user=> <h2><Link to={`/users/${user.id}`}><UserCard user={user} setUser={setUser}/></Link></h2>)      } 
+                // load? <h2>en cours</h2> : users.map((user)=> <h2><Link to={`/users/${user.id}`}><UserCard user={user} setUser={setUser}/></Link></h2>)   
+                load? <h2>en cours</h2> : users.map((user)=><UserCard  user={user}/>)   
+         } 
+            
+
         </div>
     )
 }

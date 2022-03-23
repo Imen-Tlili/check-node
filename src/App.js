@@ -4,6 +4,7 @@ import NavUser from './Component/NavUser';
 import UserCard from './Component/UserCard'
 import {Routes, Route} from 'react-router-dom'
 import Home from './Component/Home'
+import Description from './Component/Description';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
          <Routes>
            <Route path='/' element={<Home/>}/>
            <Route path='/users' element={<UserList/>}/>
-           <Route path='/users/:id' element={<UserCard/>}/>
+           <Route path='/users/:id' element={<Description/>}/>
          </Routes>
   
     </div>

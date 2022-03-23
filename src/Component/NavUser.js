@@ -1,4 +1,5 @@
 import {Navbar, Nav, Container} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const NavUser=()=>{
     return(
@@ -7,8 +8,8 @@ const NavUser=()=>{
               <Container>
                <Navbar.Brand href="#home">List of Users</Navbar.Brand>
                  <Nav className="me-auto">
-                    <link to='/'><Nav.Link href="#home">Home</Nav.Link></link>
-                    <link to='/users/'> <Nav.Link href="#features">User Infos</Nav.Link></link>
+                    <Link to='/'><Nav.Link href="#home">Home</Nav.Link></Link>
+                    <Link to='/users'> <Nav.Link href="#features">Users Infos</Nav.Link></Link>
       
                  </Nav>
               </Container>
